@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devise=width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+      <form class="formContact" onsubmit="validarFormulario(event)">
+          <div class="contInput">
+              <label for="">Nombre</label>
+              <input type="text" placeholder="Ej:Pepito" id="name">
+              <small id="mensajeAlertNombre" class="mensajeAlert"></small>
+          </div>
+
+          <div class="contInput">
+            <label for="">Apellido</label>
+            <input type="text"  id="lastName">
+            <small id="mensajeAlertLast" class="mensajeAlert"></small>
+            </div>
+
+            <div class="contInput">
+                <label for="">Correo</label>
+                <input type="email" id="email">
+                <small id="mensajeAlertEmail" class="mensajeAlert"></small>
+            </div>
+
+            <div class="contInput">
+                <label for="">Contraseña</label>
+                <input type="password" id="passw">
+                <small id="mensajeAlertPassw" class="mensajeAlert"></small>
+            </div>
+
+            <div class="contInput">
+                <label for="">Edad</label>
+                <input type="number" id="age">
+                <small id="mensajeAlertAge" class="mensajeAlert"></small>
+            </div>
+            <div class="contInput inputTyC">
+                <label for="inputYyC">Acepta terminos y condiciones</label>
+                <input type="checkbox" id="inputTyC">
+            </div>
+            <small id="mensajeAlertTyC" class="mensajeAlert"></small>
+
+            <input type="submit" value="Enviar" class="btnEnviar">
+
+      </form>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
