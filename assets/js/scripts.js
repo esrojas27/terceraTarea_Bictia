@@ -133,27 +133,28 @@ function diaSemana(dia){
 }
 */
 
+//creamso las tres variable las cuales vamos a utilizar en todo el codigo 
 let inputNum1 = null;
-let inputNum2 = null;
-let respuesta = document.getElementById('respuesta');
+let inputNum2 = null;//estas dos variables son en las que guardaremos el valor de los espacios escritos por el usuario 
+let respuesta = document.getElementById('respuesta');//en esta variable estamos obteniendo en el lugar donde vamos a colocar la respuesta de la opercacion
 
-function suma(){
+function suma(){ //creamos una funcion de suma
 
-    let suma = null;
+    let suma = null; //creamos una variable en donde vamos a guardar el resultado de la operacion
     
     inputNum1 = document.getElementById('num1').value
-    inputNum2 = document.getElementById('num2').value
+    inputNum2 = document.getElementById('num2').value //en estas dos variable obtenemos el valor de los dos campos "input" que es donde el usuario coloco los numeros a operar
     n1 = parseInt(inputNum1,10)
-    n2 = parseInt(inputNum2,10)
-    suma=(n1+n2)
+    n2 = parseInt(inputNum2,10) //aqui parseamos los valores obtenidos para pasarlos a numeros en base 10
+    suma=(n1+n2) //aqui hacemos la operacion correspondiente
 
-    respuesta.innerText = suma;
-
+    respuesta.innerText = suma;//finalemente escribimos el resultado de la opeacion en el div del cual tenemos la ubicacion por si id 
+ 
 }
 
 function resta(){
 
-    let resta = null;
+    let resta = null; //creamos una variable en donde vamos a guardar el resultado de la operacion
     
     inputNum1 = document.getElementById('num1').value
     inputNum2 = document.getElementById('num2').value
@@ -166,7 +167,7 @@ function resta(){
 }
 function multi(){
 
-    let  multi= null;
+    let  multi= null; //creamos una variable en donde vamos a guardar el resultado de la operacion
     
     inputNum1 = document.getElementById('num1').value
     inputNum2 = document.getElementById('num2').value
@@ -175,14 +176,13 @@ function multi(){
     multi=(n1*n2)
 
     respuesta.innerText = multi;
-    console.log(multi)
-    alert(multi)
+
 
 }
 
 function divi(){
 
-    let divi = null;
+    let divi = null; //creamos una variable en donde vamos a guardar el resultado de la operacion
     
     inputNum1 = document.getElementById('num1').value
     inputNum2 = document.getElementById('num2').value

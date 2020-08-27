@@ -1,0 +1,62 @@
+html{
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.calculadora{
+    background-color: cyan;
+    width: 60%;
+    border-color: tomato;
+    border-radius: 30px;
+    margin-left: 300px;
+    margin-top: 200px;
+    border: 5px solid rgb(66, 51, 204);
+}
+
+
+/* El estilo de las entradas de texto  */
+.input{
+    width: 40%;
+    border-radius: 30%;
+    text-align: center;
+    background-color: darkgrey ;
+    color: wheat;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+    border: 5px solid rgb(66, 51, 204);
+}
+
+/* El estilo del div de los botones para poder acomodarlo adecuadamente en pantalla*/
+.botones_div{
+    margin-left: 200px;
+    margin-top: 30px;
+    
+}
+
+/*El estilo de los botones como tal */
+.botones{
+    margin-left:70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+/* Estilo de los botones solo que esta vez cuando se pasa el cursor por encima*/
+.botones:hover{
+    color: white;
+    background-color: red;
+}
+
+/*Estilo del campo de respuesta*/
+.res{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    margin-left: 55px;
+    margin-top: 30px;
+    color: red;
+
+}

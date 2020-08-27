@@ -5,19 +5,21 @@
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
     <body>
-        <div>
-            <input type="number" id="num1">
-            <input type="number" id="num2">
-        </div>
-        <div>
-            <button onclick="suma()">+</button>
-            <button onclick="resta()">-</button>
-            <button onclick="multi()">x</button>
-            <button onclick="divi()">/</button>
-        </div>
-        <div>
-            <span>RESPUESTA:</span>
-            <span id="respuesta"></span>
+        <div class="calculadora">
+            <div >
+                <input  id="num1" class="input">
+                <input  id="num2" class="input">
+            </div>
+            <div class="botones_div">
+                <button class="botones" onclick="suma()">+</button>
+                <button class="botones" onclick="resta()">-</button>
+                <button class="botones" onclick="multi()">x</button>
+                <button class="botones" onclick="divi()">/</button>
+            </div>
+            <div class="res">
+                <span >RESPUESTA:</span>
+                <span id="respuesta"></span>
+            </div>
         </div>
 
         <script src="assets/js/scripts.js"></script>
