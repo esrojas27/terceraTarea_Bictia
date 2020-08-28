@@ -42,11 +42,15 @@ function validarFormulario(e){
         mensajeTyC.innerText = "Por favor acepta los Terminos y condiciones"
     }
     if(inputName.value != '' && inputTyC.checked && inputLast.value != '' && inputPassw.value != '' && inputEmail.value != '' && inputAge.value != ''){
+        
         //en este parte se esta haciendo la verificacion de todos los inputs los cuales deben estar completos
-        swal("Muy Bien!", "Registro Exitoso", "success");
-        setTimeout(()=>{}, 5000)//recibe una funcion de call back anonima y le dice cuanto tiempo se demora
+        swal("Muy Bien!", "Registro Exitoso", "success")
+       setTimeout( function(){
         window.location = './index.html'
+       } , 2000)    // recibe una funcion de call back anonima y le dice cuanto tiempo se demora
+       
     }
+  
 }
 
 
